@@ -173,6 +173,7 @@ createReviewHTML = (review) => {
 fillBreadcrumb = (restaurant=self.restaurant) => {
   const breadcrumb = document.getElementById('breadcrumb');
   const li = document.createElement('li');
+  li.className = "w3-col s4";
   li.innerHTML = restaurant.name;
   breadcrumb.appendChild(li);
 }
